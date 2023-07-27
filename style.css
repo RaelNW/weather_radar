@@ -28,11 +28,11 @@ button {
     background-color: aqua;
 
 }
- .forecast-container>*{
+.forecast-container>*{
     width: 18%;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: Center;
- }
+}

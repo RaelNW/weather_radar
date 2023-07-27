@@ -59,6 +59,7 @@ function getForecast(city) {
           ((forecastData[i].main.temp - 273.15) * 9) / 5 + 32
         );
         var windSpeed = Math.round(forecastData[i].wind.speed * 2.237);
+        var humidity = Math.round(forecastData[i].main.humidity);
 
         forecastHTML +=
           "<p>" +
@@ -66,6 +67,8 @@ function getForecast(city) {
           ": " +
           windSpeed +
           " MPH " +
+          humidity +
+          " % " +
           temperature +
           "°F</p>";
       }

@@ -6,10 +6,15 @@ This application allows users to search for a city and view a 5 day forecast for
 ## Features
 
 Search for a city by name
+Retrieves date from a weather API (Open weather Map)
 View a 5 day forecast for the city
 See the temperature, humidity and wind speed
+Converts temperature from Kelvin to Fahrenheit
 Save recent searches for easy access later
 
 ## Instructions
 
 To use the Weather Dashboard, simply enter the name of a city in the search bar and click the search button. The application will display the 5 day forecast for the city you specified. You can view the temperature, humidity and wind speed for each day. Your recent searches will be saved for easy access later.
+
+Here is a picture of the expected outcome
+![Weather Dashboard](06-server-side-apis-homework-demo.png)
