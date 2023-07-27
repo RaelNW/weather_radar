@@ -13,8 +13,8 @@
         </header>
         <div class="search">
             <h2>Search for a city:</h2>
-            <input type="text" name="Search for a city" id="city" placeholder="Enter city name">
-            <button onclick="searchWeather()">Search</button>
+            <input type="text" name="Search for a city" id="cityInput" placeholder="Enter city name">
+            <button onclick="searchWeather()" id="searchButton">Search</button>
         </div>
         <div class="main">
             <div class="time" id="time">
@@ -23,7 +23,7 @@
             <div class="Day" id="Day">
                 Monday
             </div>
-            <div class="forecast-container">
+            <div class="forecast-container" id="forecastContainer">
 
             </div>
         </div>
