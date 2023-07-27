@@ -22,7 +22,9 @@ function displayForecast(data) {
   forecastContainer.appendChild(cityName);
 
   var temperature = document.createElement("p");
-  temperature.textContent = "Temperature: " + data.main.temp + "ºF";
+  var temperatureConvert = ((data.main.temp - 273.15) * 9) / 5 + 32;
+  temperature.textContent =
+    "Temperature: " + temperatureConvert.toFixed(2) + " °F";
   forecastContainer.appendChild(temperature);
 
   var humidity = document.createElement("p");
@@ -30,6 +32,7 @@ function displayForecast(data) {
   forecastContainer.appendChild(humidity);
 
   var windSpeed = document.createElement("p");
-  windSpeed.textContent = "Wind Speed: " + data.wind.speed + " MPH";
+  var windSpeedMph = data.wind.speed * 2.237;
+  windSpeed.textContent = "Wind Speed: " + windSpeedMph.toFixed(2) + " MPH";
   forecastContainer.appendChild(windSpeed);
 }
