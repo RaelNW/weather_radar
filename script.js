@@ -2,7 +2,7 @@ function searchWeather() {
   var city = document.getElementById("cityInput").value;
 
   var apiUrl =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
     "&APPID=f2d2ef0703953b45c83e0ca0964001f7";
   fetch(apiUrl)
@@ -39,7 +39,7 @@ function displayForecast(data) {
 }
 function getForecast(city) {
   var apiUrl =
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
     city +
     "&APPID=f2d2ef0703953b45c83e0ca0964001f7";
   fetch(apiUrl)
